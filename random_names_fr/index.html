@@ -10,8 +10,21 @@
       href="./resources/assets/img/ico/linux-logo.ico"
       type="image/x-icon"
     />
-    <!-- <script defer type="module" src="./resources/js/imports.mjs"></script> -->
     <script defer type="module" src="./resources/js/main.mjs"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2G0TDBTXRG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2G0TDBTXRG");
+    </script>
   </head>
   <body class="d-flex flex-column h-100 bg-dark">
     <header>
