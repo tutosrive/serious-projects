@@ -1,0 +1,41 @@
+@import "../utils/bootstrap-5.3.3/css/morph/bootstrap.min.css";
+@import "../utils/tabulator-6.3/css/tabulator.min.css";
+@import "toast.css";
+#table-container .tabulator-col,
+#table-container > div {
+  background-color: #212633;
+  color: #6c80b3;
+}
+
+#table-container .tabulator-cell {
+  border: 0.1vb solid #212529;
+  background-color: #6c80b3;
+  color: #212633;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+/* Forzar los estilos solo para Tabulator */
+#table-container .tabulator-tableholder {
+  overflow-y: auto; /* Asegurar scroll vertical si es necesario */
+  overflow-x: auto; /* Asegurar scroll horizontal si es necesario */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6c80b3 #212529; /* Firefox: thumb y track */
+}
+
+/* Scrollbar personalizado para Chrome, Edge y Safari */
+#table-container .tabulator-tableholder::-webkit-scrollbar {
+  height: 10px; /* Scroll horizontal */
+  width: 10px; /* Scroll vertical */
+  background-color: #212529; /* Color de fondo del track */
+}
+
+#table-container .tabulator-tableholder::-webkit-scrollbar-thumb {
+  background-color: #6c80b3; /* Color del thumb (barra) */
+  border-radius: 5px; /* Esquinas redondeadas */
+  border: 2px solid #f0f0f0; /* Espacio alrededor del thumb */
+}
+
+#table-container .tabulator-tableholder::-webkit-scrollbar-thumb:hover {
+  background-color: #e67e22; /* Color del thumb al hacer hover */
+}
