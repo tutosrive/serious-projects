@@ -8,7 +8,7 @@ export default class Languages {
   static async #addContentToPage() {
     try {
       const data = await Helpers.fetchJSON('./resources/lang/es.json');
-      console.log(data);
+
       const selectors = ['#titleMain', '#whats', '#featuresTitle', '#features'];
       let ids = ['titleMain', 'whats', 'featuresTitle', 'features'];
       let nodes = document.querySelectorAll(selectors);
