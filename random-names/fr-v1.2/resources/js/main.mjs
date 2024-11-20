@@ -46,8 +46,6 @@ class App {
           case 'fr-FR': // Francés (Francia)
           case 'it-IT': // Italiano (Italia)
           case 'pt-BR': // Portugués (Brasil)
-            console.log('URL: ' + urlAPI);
-
             Manager.sendData(`${urlAPI}/person/41/${reg}`);
             break;
         }
