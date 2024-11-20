@@ -3,9 +3,9 @@ import Imports from './imports.mjs';
 class App {
   static async init() {
     try {
-      Manager.loadHome();
       // Ejecutar el "escuchador" de eventos
       App.#listener();
+      await Manager.loadHome();
     } catch (e) {
       Toast.show({ message: e.message, mode: 'danger', error: e });
     }
