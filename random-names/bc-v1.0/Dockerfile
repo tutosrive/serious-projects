@@ -1,14 +1,14 @@
-# Use the official OpenJDK 21 slim image as the base
+# Usar una imagen base de Java
 FROM openjdk:21-jdk-slim
 
-# Set the working directory inside the container
+# Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copy the jar file from the current directory (Dockerfile's directory)
-COPY random-names/bc-v1.0/randomNames.jar .
+# Copiar el archivo JAR a la imagen
+COPY randomNames.jar /app/randomNames.jar
 
-# Expose the port your application is running on
-EXPOSE 7070
+# Exponer el puerto (ajústalo según tu configuración)
+EXPOSE 8080
 
-# Start the application
-CMD ["java", "-jar", "./randomNames.jar"]
+# Comando para ejecutar el JAR
+ENTRYPOINT ["java", "-jar", "randomNames.jar"]
