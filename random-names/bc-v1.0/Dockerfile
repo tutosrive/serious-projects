@@ -1,11 +1,14 @@
-# Usa una imagen oficial de Java
-FROM openjdk:21-jdk
+# Imagen base de Java
+FROM openjdk:21-jdk-slim
 
-# Copia el archivo JAR en el contenedor
-COPY randomNames.jar /app/randomNames.jar
-
-# Define el directorio de trabajo
+# Directorio de trabajo
 WORKDIR /app
 
+# Copia el archivo JAR al contenedor
+COPY target/envios.jar /app/envios.jar
+
+# Puerto expuesto (Railway usará la variable PORT)
+EXPOSE 8080
+
 # Comando para ejecutar la aplicación
-CMD ["java", "-jar", "randomNames.jar"]
+CMD ["sh", "-c", "java -jar /app/envios.jar --server.port=${PORT:-8080}"]
