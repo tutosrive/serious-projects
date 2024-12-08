@@ -1,6 +1,6 @@
 # Dockerfile.koyeb
 FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY envios.jar .
+COPY randomNames.jar .
 EXPOSE 7070
-CMD ["java", "-jar", "envios.jar"]
+CMD ["java", "-jar", "randomNames.jar"]
