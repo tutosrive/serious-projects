@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/envios.jar /app/envios.jar
 
 # Puerto expuesto (Railway usará la variable PORT)
-EXPOSE 8080
+EXPOSE 7070
 
 # Comando para ejecutar la aplicación
-CMD ["sh", "-c", "java -jar /app/envios.jar --server.port=${PORT:-8080}"]
+CMD ["sh", "-c", "java -jar /app/envios.jar --server.port=${PORT:-7070}"]
