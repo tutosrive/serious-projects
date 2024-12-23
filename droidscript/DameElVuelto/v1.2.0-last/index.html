@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Return</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Campos de texto (Ingreso de información)-->
+    <section class="form-info card-blur" id="inputs">
+      <!-- Precios -->
+      <div class="inp-info placeholder-prices" id="prices" tabindex="-1"></div>
+      <!-- Plata recibida -->
+      <div name="money" id="money" class="inp-info" placeholder="" tabindex="-1"></div>
+      <!-- Total precios -->
+      <div class="resultContainer card-blur">
+        <p id="result"></p>
+      </div>
+      <!-- Total a devolver -->
+      <div class="resultContainer card-blur">
+        <p id="return">¿CUÁNTO DEVOLVER?</p>
+      </div>
+      <!-- Botón flotante (Para calcular cuánto se debe devolver) -->
+      <button class="btnReturn" id="btnReturn">Devolver</button>
+    </section>
+
+    <!-- Teclado -->
+    <section class="sect-keyboard">
+      <!-- <div class="containerKeyboard"> -->
+      <div class="keyboard" id="keyboard"></div>
+      <!-- </div> -->
+    </section>
+  </main>
+  <footer class="card-blur">
+    <pre>© Trg 2024</pre>
+  </footer>
+  <!-- Script -->
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
