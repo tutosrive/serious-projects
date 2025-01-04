@@ -10,7 +10,6 @@ export default class Table {
     Table.#table = new Tabulator('#table-container', {
       height: tableHeight,
       data: data,
-      layout: 'fitColumns',
       progressiveLoad: 'scroll', // Carga datos progresivamente
       columns: cols,
       responsiveLayout: false, // activado el scroll horizontal, también: ['hide'|true|false]
