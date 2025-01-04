@@ -11,9 +11,6 @@ export default class Table {
       height: tableHeight,
       data: data,
       layout: 'fitColumns',
-      columnDefaults: {
-        maxWidth: 200
-      },
       progressiveLoad: 'scroll', // Carga datos progresivamente
       columns: cols,
       responsiveLayout: false, // activado el scroll horizontal, también: ['hide'|true|false]
