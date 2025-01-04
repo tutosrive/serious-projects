@@ -51,38 +51,32 @@ export default class Manager {
       {
         title: 'Primer Nombre',
         field: 'name',
-        width: 250,
         hozAlign: 'center'
       },
       {
         title: 'Apellido',
         field: 'lastname',
-        width: 250,
         hozAlign: 'center'
       },
       {
         title: 'Edad',
         field: 'age',
-        width: 90,
         hozAlign: 'center'
       },
       {
         title: 'Trabajo',
         field: 'job',
-        width: 250,
         hozAlign: 'center'
       },
       {
         title: 'Apodo',
         field: 'funnyName',
-        width: 250,
         hozAlign: 'center'
       },
       {
         title: 'Dirección',
         field: 'address',
-        hozAlign: 'center',
-        width: 250
+        hozAlign: 'center'
       }
     ];
     // Cargar contenedor de tabla
